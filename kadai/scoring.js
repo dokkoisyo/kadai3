@@ -87,6 +87,8 @@ $(document).ready(function(){
   });
   // 「最終ジャッジ」(class="btn-declaration")ボタンを押したら「function judgement()」が出力される処理です。
   $('#btn-declaration').click(function() {
+    let rejud = $('#declaration').remove();
+    $('#jud').append(rejud);
     $('#declaration').text(judgement());
   });
 });
